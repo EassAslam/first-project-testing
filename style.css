@@ -462,6 +462,12 @@ footer a {
   text-decoration: none;
 }
 
+.disclaimer {
+  flex-basis: 100%;
+  color: rgba(255, 250, 242, 0.52);
+  font-size: 13px;
+}
+
 @media (max-width: 860px) {
   .nav-toggle {
     display: block;
