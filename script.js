@@ -26,8 +26,8 @@ if (statusElement) {
   const day = now.getDay();
   const hour = now.getHours();
 
-  const closesAt = day === 0 ? 17 : day === 6 ? 19 : 20;
-  const opensAt = day === 0 ? 10 : 9;
+  const closesAt = day === 0 ? 18 : 20;
+  const opensAt = 9;
   const isOpen = hour >= opensAt && hour < closesAt;
 
   statusElement.textContent = isOpen ? "Open now" : "Closed now";
