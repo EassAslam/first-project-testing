@@ -1,0 +1,1 @@
+console.log("Local business website loaded successfully.");
