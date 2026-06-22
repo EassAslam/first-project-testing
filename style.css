@@ -1,13 +1,13 @@
 :root {
-  --ink: #171512;
-  --muted: #706a61;
-  --paper: #f7f0e7;
-  --cream: #fffaf2;
-  --gold: #c9973f;
-  --gold-dark: #9f6f24;
-  --charcoal: #24201c;
-  --line: rgba(23, 21, 18, 0.12);
-  --shadow: 0 24px 70px rgba(23, 21, 18, 0.16);
+  --text-dark: #121317;
+  --text-muted: #626875;
+  --page-bg: #f2f4f7;
+  --surface: #ffffff;
+  --accent-red: #d92332;
+  --accent-navy: #0c2872;
+  --deep-navy: #101827;
+  --line: rgba(12, 40, 114, 0.14);
+  --shadow: 0 24px 70px rgba(10, 18, 32, 0.18);
 }
 
 * {
@@ -21,8 +21,8 @@ html {
 }
 
 body {
-  background: var(--paper);
-  color: var(--ink);
+  background: var(--page-bg);
+  color: var(--text-dark);
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
 }
@@ -33,10 +33,10 @@ a {
 
 .hero {
   min-height: 100vh;
-  color: var(--cream);
+  color: var(--surface);
   background:
-    linear-gradient(90deg, rgba(23, 21, 18, 0.94), rgba(23, 21, 18, 0.72)),
-    url("https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1800&q=80") center / cover;
+    linear-gradient(90deg, rgba(10, 14, 24, 0.94), rgba(12, 40, 114, 0.7)),
+    url("assets/images/exterior_storefront.png") center / cover;
   padding: 24px;
 }
 
@@ -66,9 +66,10 @@ a {
   width: 42px;
   height: 42px;
   place-items: center;
-  border: 1px solid rgba(255, 250, 242, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 50%;
-  color: var(--gold);
+  color: var(--surface);
+  background: var(--accent-red);
 }
 
 .nav-links {
@@ -78,21 +79,21 @@ a {
 }
 
 .nav-links a {
-  color: rgba(255, 250, 242, 0.86);
+  color: rgba(255, 255, 255, 0.86);
   font-size: 14px;
   font-weight: 700;
   text-decoration: none;
 }
 
 .nav-links a:hover {
-  color: var(--gold);
+  color: var(--accent-red);
 }
 
 .nav-toggle {
   display: none;
   width: 44px;
   height: 44px;
-  border: 1px solid rgba(255, 250, 242, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 50%;
   background: transparent;
   cursor: pointer;
@@ -103,7 +104,7 @@ a {
   width: 18px;
   height: 2px;
   margin: 4px auto;
-  background: var(--cream);
+  background: var(--surface);
 }
 
 .hero-grid {
@@ -122,7 +123,7 @@ a {
 }
 
 .eyebrow {
-  color: var(--gold);
+  color: var(--accent-red);
   font-size: 13px;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -145,7 +146,7 @@ h1 {
 .hero-copy {
   max-width: 620px;
   margin: 26px 0 34px;
-  color: rgba(255, 250, 242, 0.84);
+  color: rgba(255, 255, 255, 0.84);
   font-size: 19px;
 }
 
@@ -174,22 +175,22 @@ h1 {
 }
 
 .btn-primary {
-  background: var(--gold);
-  color: var(--ink);
+  background: var(--accent-red);
+  color: var(--surface);
 }
 
 .btn-primary:hover {
-  background: #ddb568;
+  background: #f03a48;
 }
 
 .btn-secondary {
-  border-color: rgba(255, 250, 242, 0.34);
-  color: var(--cream);
+  border-color: rgba(255, 255, 255, 0.34);
+  color: var(--surface);
 }
 
 .visit-card .btn-secondary {
-  border-color: rgba(23, 21, 18, 0.22);
-  color: var(--ink);
+  border-color: rgba(18, 19, 23, 0.22);
+  color: var(--text-dark);
 }
 
 .hero-meta {
@@ -200,18 +201,18 @@ h1 {
 }
 
 .hero-meta span {
-  border: 1px solid rgba(255, 250, 242, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 999px;
-  color: rgba(255, 250, 242, 0.82);
+  color: rgba(255, 255, 255, 0.82);
   font-size: 13px;
   padding: 8px 12px;
 }
 
 .hero-card {
   padding: 28px;
-  border: 1px solid rgba(255, 250, 242, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 8px;
-  background: rgba(255, 250, 242, 0.1);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(18px);
   box-shadow: var(--shadow);
 }
@@ -219,24 +220,24 @@ h1 {
 .hero-card strong {
   display: block;
   margin-bottom: 10px;
-  color: var(--cream);
+  color: var(--surface);
   font-size: 28px;
   line-height: 1.1;
 }
 
 .hero-card p:not(.status-label) {
   margin-bottom: 18px;
-  color: rgba(255, 250, 242, 0.76);
+  color: rgba(255, 255, 255, 0.76);
 }
 
 .hero-card a {
-  color: var(--gold);
+  color: var(--accent-red);
   font-weight: 800;
   text-decoration: none;
 }
 
 .status-label {
-  color: var(--gold);
+  color: var(--accent-red);
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -265,7 +266,7 @@ h1 {
 .section-heading p:not(.eyebrow),
 .section-copy p,
 .visit-card p {
-  color: var(--muted);
+  color: var(--text-muted);
   font-size: 18px;
   margin-top: 16px;
 }
@@ -284,11 +285,11 @@ h1 {
   padding: 28px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: var(--cream);
+  background: var(--surface);
 }
 
 .service-card.featured {
-  border-color: rgba(201, 151, 63, 0.55);
+  border-color: rgba(217, 35, 50, 0.5);
   box-shadow: var(--shadow);
 }
 
@@ -298,11 +299,11 @@ h1 {
 }
 
 .service-card p {
-  color: var(--muted);
+  color: var(--text-muted);
 }
 
 .service-card span {
-  color: var(--gold-dark);
+  color: var(--accent-navy);
   font-size: 28px;
   font-weight: 900;
 }
@@ -318,19 +319,25 @@ h1 {
 }
 
 .image-panel {
+  border: 4px solid var(--surface);
+  overflow: hidden;
   min-height: 560px;
   border-radius: 8px;
-  background:
-    linear-gradient(180deg, rgba(23, 21, 18, 0.1), rgba(23, 21, 18, 0.28)),
-    url("https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1200&q=80") center / cover;
   box-shadow: var(--shadow);
+}
+
+.image-panel img {
+  display: block;
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
 }
 
 .check-list {
   display: grid;
   gap: 14px;
   margin-top: 28px;
-  color: var(--ink);
+  color: var(--text-dark);
   list-style: none;
 }
 
@@ -343,7 +350,7 @@ h1 {
   content: "";
   width: 11px;
   height: 11px;
-  border: 3px solid var(--gold);
+  border: 3px solid var(--accent-red);
   border-radius: 50%;
   left: 0;
   position: absolute;
@@ -352,8 +359,10 @@ h1 {
 
 .dark-section {
   max-width: none;
-  background: var(--charcoal);
-  color: var(--cream);
+  background:
+    linear-gradient(135deg, rgba(217, 35, 50, 0.18), transparent 32%),
+    var(--deep-navy);
+  color: var(--surface);
 }
 
 .dark-section .section-heading {
@@ -363,7 +372,7 @@ h1 {
 }
 
 .dark-section .section-heading p:not(.eyebrow) {
-  color: rgba(255, 250, 242, 0.72);
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .barber-grid {
@@ -377,13 +386,13 @@ h1 {
 .barber-grid article {
   min-height: 230px;
   padding: 28px;
-  border: 1px solid rgba(255, 250, 242, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 8px;
-  background: rgba(255, 250, 242, 0.06);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .barber-grid span {
-  color: var(--gold);
+  color: var(--accent-red);
   font-weight: 900;
 }
 
@@ -393,7 +402,7 @@ h1 {
 }
 
 .barber-grid p {
-  color: rgba(255, 250, 242, 0.72);
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .visit-section {
@@ -407,9 +416,10 @@ h1 {
 
 .visit-card,
 .hours-card {
+  border: 1px solid var(--line);
   border-radius: 8px;
-  background: var(--cream);
-  box-shadow: 0 18px 50px rgba(23, 21, 18, 0.08);
+  background: var(--surface);
+  box-shadow: 0 18px 50px rgba(18, 19, 23, 0.08);
 }
 
 .visit-card {
@@ -442,7 +452,7 @@ h1 {
 }
 
 .hours-card dd {
-  color: var(--muted);
+  color: var(--text-muted);
   text-align: right;
 }
 
@@ -451,20 +461,20 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 16px;
-  background: var(--ink);
-  color: rgba(255, 250, 242, 0.76);
+  background: var(--deep-navy);
+  color: rgba(255, 255, 255, 0.76);
   padding: 26px max(24px, calc((100vw - 1180px) / 2));
 }
 
 footer a {
-  color: var(--gold);
+  color: var(--accent-red);
   font-weight: 800;
   text-decoration: none;
 }
 
 .disclaimer {
   flex-basis: 100%;
-  color: rgba(255, 250, 242, 0.52);
+  color: rgba(255, 255, 255, 0.52);
   font-size: 13px;
 }
 
@@ -483,9 +493,9 @@ footer a {
     align-items: flex-start;
     gap: 0;
     padding: 12px;
-    border: 1px solid rgba(255, 250, 242, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 8px;
-    background: rgba(23, 21, 18, 0.96);
+    background: rgba(16, 24, 39, 0.96);
   }
 
   .nav-links.is-open {
@@ -515,6 +525,10 @@ footer a {
 
   .image-panel {
     min-height: 360px;
+  }
+
+  .image-panel img {
+    height: 360px;
   }
 }
 
