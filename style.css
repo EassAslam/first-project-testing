@@ -630,6 +630,57 @@ h1 {
   text-align: right;
 }
 
+.location-photo-card {
+  grid-column: 1 / -1;
+  min-height: 420px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 18px 50px rgba(18, 19, 23, 0.08);
+  overflow: hidden;
+  position: relative;
+}
+
+.location-photo-card img {
+  display: block;
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  object-position: center 38%;
+}
+
+.location-photo-card::after {
+  background: linear-gradient(180deg, transparent, rgba(10, 14, 24, 0.76));
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.location-photo-card figcaption {
+  bottom: 24px;
+  color: var(--surface);
+  left: 24px;
+  position: absolute;
+  right: 24px;
+  z-index: 1;
+}
+
+.location-photo-card span {
+  color: rgba(255, 255, 255, 0.72);
+  display: block;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.location-photo-card strong {
+  display: block;
+  font-size: clamp(24px, 4vw, 42px);
+  line-height: 1.05;
+}
+
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -764,5 +815,9 @@ footer a {
   .hours-card dd {
     margin-top: 4px;
     text-align: left;
+  }
+
+  .location-photo-card img {
+    height: 340px;
   }
 }

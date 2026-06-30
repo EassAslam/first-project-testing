@@ -108,6 +108,9 @@ const translations = {
     hoursTitle: "Hours",
     hoursWeekdays: "Mon - Sat",
     hoursSunday: "Sunday",
+    locationImageAlt: "Street view near Northern Boulevard and 80th Street",
+    locationCaptionLabel: "Neighborhood corner",
+    locationCaptionTitle: "Near Northern Blvd & 80th St",
     footerRights:
       '&copy; <span id="year">2026</span> Sandy Barber Shop. All rights reserved.',
     backToTop: "Back to top",
@@ -217,6 +220,9 @@ const translations = {
     hoursTitle: "Horario",
     hoursWeekdays: "Lun - Sab",
     hoursSunday: "Domingo",
+    locationImageAlt: "Vista de la calle cerca de Northern Boulevard y la calle 80",
+    locationCaptionLabel: "Esquina del vecindario",
+    locationCaptionTitle: "Cerca de Northern Blvd y 80th St",
     footerRights:
       '&copy; <span id="year">2026</span> Sandy Barber Shop. Todos los derechos reservados.',
     backToTop: "Volver arriba",
