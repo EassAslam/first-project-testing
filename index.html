@@ -8,50 +8,54 @@
 </head>
 <body>
   <header class="hero" id="top">
-    <nav class="navbar" aria-label="Primary navigation">
+    <nav class="navbar" aria-label="Primary navigation" data-i18n-attr="aria-label:navAria">
       <a class="logo" href="#top" aria-label="Sandy Barber Shop home">
         <span class="logo-mark">SB</span>
         <span>Sandy Barber Shop</span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-i18n-attr="aria-label:navToggleAria">
         <span></span>
         <span></span>
         <span></span>
       </button>
 
       <div class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#experience">Experience</a>
-        <a href="#barbers">Barbers</a>
-        <a href="#visit">Visit</a>
+        <a href="#services" data-i18n="navServices">Services</a>
+        <a href="#experience" data-i18n="navExperience">Experience</a>
+        <a href="#barbers" data-i18n="navBarbers">Barbers</a>
+        <a href="#visit" data-i18n="navVisit">Visit</a>
+        <button class="language-toggle" type="button" aria-label="Cambiar a espanol" data-language-toggle>
+          <span data-lang-option="en">EN</span>
+          <span data-lang-option="es">ES</span>
+        </button>
       </div>
     </nav>
 
     <section class="hero-grid">
       <div class="hero-content">
-        <p class="eyebrow">East Elmhurst, Queens</p>
-        <h1>Sharp cuts, clean fades, neighborhood service.</h1>
-        <p class="hero-copy">
+        <p class="eyebrow" data-i18n="heroEyebrow">East Elmhurst, Queens</p>
+        <h1 data-i18n="heroTitle">Sharp cuts, clean fades, neighborhood service.</h1>
+        <p class="hero-copy" data-i18n="heroCopy">
           A neighborhood barber shop near Jackson Heights for classic cuts, skin
           fades, beard work, and quick cleanups before work, dinner, or a night out.
         </p>
         <div class="hero-actions">
-          <a href="tel:+13477306600" class="btn btn-primary">Call to Book</a>
-          <a href="#services" class="btn btn-secondary">View Services</a>
+          <a href="tel:+13477306600" class="btn btn-primary" data-i18n="callToBook">Call to Book</a>
+          <a href="#services" class="btn btn-secondary" data-i18n="viewServices">View Services</a>
         </div>
         <div class="hero-meta" aria-label="Shop highlights">
-          <span>Walk-ins welcome</span>
-          <span>Open 7 days</span>
-          <span>Se habla espanol</span>
+          <span data-i18n="metaWalkIns">Walk-ins welcome</span>
+          <span data-i18n="metaOpen">Open 7 days</span>
+          <span data-i18n="metaSpanish">Se habla espanol</span>
         </div>
       </div>
 
       <aside class="hero-card" aria-label="Shop information">
-        <p class="status-label">Today's status</p>
+        <p class="status-label" data-i18n="statusLabel">Today's status</p>
         <strong id="shop-status">Checking hours...</strong>
         <p>32-61 80th St, East Elmhurst, NY</p>
-        <a href="#visit">Hours and directions</a>
+        <a href="#visit" data-i18n="hoursDirections">Hours and directions</a>
       </aside>
     </section>
   </header>
@@ -59,9 +63,9 @@
   <main>
     <section id="services" class="section">
       <div class="section-heading">
-        <p class="eyebrow">Services</p>
-        <h2>Fresh work without the fuss.</h2>
-        <p>
+        <p class="eyebrow" data-i18n="servicesEyebrow">Services</p>
+        <h2 data-i18n="servicesTitle">Fresh work without the fuss.</h2>
+        <p data-i18n="servicesCopy">
           Choose a quick cleanup or sit back for the full treatment. Prices are
           simple, honest, and easy to understand.
         </p>
@@ -70,29 +74,29 @@
       <div class="service-grid">
         <article class="service-card">
           <div>
-            <h3>Classic Cut</h3>
-            <p>Scissor or clipper cut finished with neckline cleanup and styling.</p>
+            <h3 data-i18n="serviceClassicTitle">Classic Cut</h3>
+            <p data-i18n="serviceClassicCopy">Scissor or clipper cut finished with neckline cleanup and styling.</p>
           </div>
           <span>$32</span>
         </article>
         <article class="service-card featured">
           <div>
-            <h3>Skin Fade</h3>
-            <p>Detailed fade, razor-sharp edges, and a finish that holds its shape.</p>
+            <h3 data-i18n="serviceFadeTitle">Skin Fade</h3>
+            <p data-i18n="serviceFadeCopy">Detailed fade, razor-sharp edges, and a finish that holds its shape.</p>
           </div>
           <span>$38</span>
         </article>
         <article class="service-card">
           <div>
-            <h3>Beard Trim</h3>
-            <p>Shape, line-up, and hot towel finish for a clean, balanced beard.</p>
+            <h3 data-i18n="serviceBeardTitle">Beard Trim</h3>
+            <p data-i18n="serviceBeardCopy">Shape, line-up, and hot towel finish for a clean, balanced beard.</p>
           </div>
           <span>$22</span>
         </article>
         <article class="service-card">
           <div>
-            <h3>Cut + Beard</h3>
-            <p>The full reset: haircut, beard detail, hot towel, and styling.</p>
+            <h3 data-i18n="serviceComboTitle">Cut + Beard</h3>
+            <p data-i18n="serviceComboCopy">The full reset: haircut, beard detail, hot towel, and styling.</p>
           </div>
           <span>$54</span>
         </article>
@@ -104,25 +108,25 @@
         <img src="assets/images/exterior_storefront.png" alt="Exterior storefront of Sandy Barber Shop" />
       </div>
       <div class="section-copy">
-        <p class="eyebrow">The Experience</p>
-        <h2>Built for busy Queens schedules.</h2>
-        <p>
+        <p class="eyebrow" data-i18n="experienceEyebrow">The Experience</p>
+        <h2 data-i18n="experienceTitle">Built for busy Queens schedules.</h2>
+        <p data-i18n="experienceCopy">
           Get a precise cut in a relaxed shop where the chair is ready, the tools
           are clean, and every detail gets a second look before you leave.
         </p>
         <ul class="check-list">
-          <li>Online-style speed with old-school attention</li>
-          <li>Hot towel service available with beard trims</li>
-          <li>Easy access from the 7 train and neighborhood buses</li>
+          <li data-i18n="experiencePointOne">Online-style speed with old-school attention</li>
+          <li data-i18n="experiencePointTwo">Hot towel service available with beard trims</li>
+          <li data-i18n="experiencePointThree">Easy access from the 7 train and neighborhood buses</li>
         </ul>
       </div>
     </section>
 
     <section id="barbers" class="section dark-section">
       <div class="section-heading">
-        <p class="eyebrow">Your Barbers</p>
-        <h2>Local hands, steady standards.</h2>
-        <p>
+        <p class="eyebrow" data-i18n="barbersEyebrow">Your Barbers</p>
+        <h2 data-i18n="barbersTitle">Local hands, steady standards.</h2>
+        <p data-i18n="barbersCopy">
           Our team works with straight hair, curls, waves, fades, beards, and
           everything in between.
         </p>
@@ -131,42 +135,42 @@
       <div class="barber-grid">
         <article>
           <span>01</span>
-          <h3>Precision first</h3>
-          <p>We check growth patterns, face shape, and your normal styling routine.</p>
+          <h3 data-i18n="barberCardOneTitle">Precision first</h3>
+          <p data-i18n="barberCardOneCopy">We check growth patterns, face shape, and your normal styling routine.</p>
         </article>
         <article>
           <span>02</span>
-          <h3>No rushed finishes</h3>
-          <p>Edges, neckline, and blend get cleaned up before the cape comes off.</p>
+          <h3 data-i18n="barberCardTwoTitle">No rushed finishes</h3>
+          <p data-i18n="barberCardTwoCopy">Edges, neckline, and blend get cleaned up before the cape comes off.</p>
         </article>
         <article>
           <span>03</span>
-          <h3>Neighborhood friendly</h3>
-          <p>Bring a photo, bring a question, or just ask for your usual.</p>
+          <h3 data-i18n="barberCardThreeTitle">Neighborhood friendly</h3>
+          <p data-i18n="barberCardThreeCopy">Bring a photo, bring a question, or just ask for your usual.</p>
         </article>
       </div>
     </section>
 
     <section id="visit" class="visit-section">
       <div class="visit-card">
-        <p class="eyebrow">Visit Us</p>
-        <h2>Stop by Sandy Barber Shop.</h2>
+        <p class="eyebrow" data-i18n="visitEyebrow">Visit Us</p>
+        <h2 data-i18n="visitTitle">Stop by Sandy Barber Shop.</h2>
         <p>32-61 80th St, East Elmhurst, NY 11370</p>
         <div class="contact-actions">
           <a href="tel:+13477306600" class="btn btn-primary">347-730-6600</a>
-          <a href="https://maps.google.com/?q=Sandy+Barber+Shop+32-61+80th+St+East+Elmhurst+NY+11370" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Get Directions</a>
+          <a href="https://maps.google.com/?q=Sandy+Barber+Shop+32-61+80th+St+East+Elmhurst+NY+11370" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" data-i18n="getDirections">Get Directions</a>
         </div>
       </div>
 
       <div class="hours-card">
-        <h3>Hours</h3>
+        <h3 data-i18n="hoursTitle">Hours</h3>
         <dl>
           <div>
-            <dt>Mon - Sat</dt>
+            <dt data-i18n="hoursWeekdays">Mon - Sat</dt>
             <dd>9:00 AM - 8:00 PM</dd>
           </div>
           <div>
-            <dt>Sunday</dt>
+            <dt data-i18n="hoursSunday">Sunday</dt>
             <dd>9:00 AM - 6:00 PM</dd>
           </div>
         </dl>
@@ -175,9 +179,9 @@
   </main>
 
   <footer>
-    <p>&copy; <span id="year">2026</span> Sandy Barber Shop. All rights reserved.</p>
-    <a href="#top">Back to top</a>
-    <p class="disclaimer">Portfolio concept only. This is not the official Sandy Barber Shop website.</p>
+    <p data-i18n-html="footerRights">&copy; <span id="year">2026</span> Sandy Barber Shop. All rights reserved.</p>
+    <a href="#top" data-i18n="backToTop">Back to top</a>
+    <p class="disclaimer" data-i18n="disclaimer">Portfolio concept only. This is not the official Sandy Barber Shop website.</p>
   </footer>
 
   <script src="script.js"></script>
