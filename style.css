@@ -338,6 +338,27 @@ h1 {
   font-weight: 900;
 }
 
+.service-addons {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px 18px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.service-addons span {
+  color: var(--text-dark);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.service-addons strong {
+  color: var(--accent-navy);
+  font-size: 18px;
+  line-height: 1.2;
+}
+
 .split-section {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 520px);
