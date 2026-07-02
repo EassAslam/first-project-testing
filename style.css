@@ -4,6 +4,8 @@
   --page-bg: #f2f4f7;
   --surface: #ffffff;
   --accent-red: #d92332;
+  --accent-red-on-dark: #ff6b76;
+  --accent-red-hover: #c91f2d;
   --accent-navy: #0c2872;
   --deep-navy: #101827;
   --line: rgba(12, 40, 114, 0.14);
@@ -86,7 +88,7 @@ a {
 }
 
 .nav-links a:hover {
-  color: var(--accent-red);
+  color: var(--accent-red-on-dark);
 }
 
 .language-toggle {
@@ -161,6 +163,10 @@ a {
   text-transform: uppercase;
 }
 
+.hero .eyebrow {
+  color: var(--accent-red-on-dark);
+}
+
 h1,
 h2,
 h3 {
@@ -210,7 +216,7 @@ h1 {
 }
 
 .btn-primary:hover {
-  background: #f03a48;
+  background: var(--accent-red-hover);
 }
 
 .btn-secondary {
@@ -261,13 +267,13 @@ h1 {
 }
 
 .hero-card a {
-  color: var(--accent-red);
+  color: var(--accent-red-on-dark);
   font-weight: 800;
   text-decoration: none;
 }
 
 .status-label {
-  color: var(--accent-red);
+  color: var(--accent-red-on-dark);
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -426,6 +432,10 @@ h1 {
   color: rgba(255, 255, 255, 0.72);
 }
 
+.dark-section .eyebrow {
+  color: var(--accent-red-on-dark);
+}
+
 .barber-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -483,7 +493,7 @@ h1 {
 }
 
 .barber-role {
-  color: var(--accent-red) !important;
+  color: var(--accent-red-on-dark) !important;
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 0.14em;
@@ -526,7 +536,7 @@ h1 {
 
 .barber-call:hover {
   border-color: rgba(217, 35, 50, 0.72);
-  color: var(--accent-red);
+  color: var(--accent-red-on-dark);
 }
 
 .cuts-section {
@@ -735,7 +745,7 @@ footer {
 }
 
 footer a {
-  color: var(--accent-red);
+  color: var(--accent-red-on-dark);
   font-weight: 800;
   text-decoration: none;
 }
